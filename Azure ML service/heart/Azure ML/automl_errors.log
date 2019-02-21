@@ -1,0 +1,53 @@
+2019-02-14 17:21:14,491 - INFO - 114 : Starting usage telemetry collection
+2019-02-14 17:21:14,623 - INFO - 754 : Start creating parent run with DTO:  - name: classification-automl
+ - subscription_id: 4dd7cdaa-1664-46be-b521-237c98ccf3f6
+ - iterations: 50
+ - primary_metric: accuracy
+ - compute_target: cpunode
+ - task_type: classification
+ - validation_size: 0.0
+ - n_cross_validations: None
+ - y_min: None
+ - y_max: None
+ - num_classes: None
+ - preprocess: True
+ - lag_length: 0
+ - is_timeseries: False
+ - max_cores_per_iteration: 4
+ - max_concurrent_iterations: 1
+ - iteration_timeout_minutes: 60
+ - mem_in_mb: None
+ - enforce_time_on_windows: True
+ - experiment_timeout_minutes: None
+ - experiment_exit_score: None
+ - whitelist_models: None
+ - blacklist_algos: []
+ - auto_blacklist: True
+ - blacklist_samples_reached: False
+ - exclude_nan_labels: True
+ - verbosity: 20
+ - show_warnings: False
+ - model_explainability: True
+ - service_url: None
+ - sdk_url: None
+ - sdk_packages: None
+ - telemetry_verbosity: INFO
+ - send_telemetry: True
+ - spark_context: None
+ - spark_service: None
+ - metrics: None
+ - enable_ensembling: True
+ - ensemble_iterations: 15
+ - enable_tf: False
+ - enable_cache: True
+ - enable_subsampling: False
+ - subsample_seed: None
+ - cost_mode: 0
+ - metric_operation: maximize.
+2019-02-14 17:21:17,441 - INFO - 766 : [ParentRunID:AutoML_2a412fe9-ed1e-462c-9d13-36146c4b2e4d] Remote run using user script.
+2019-02-14 17:21:18,383 - INFO - 529 : [RunId:AutoML_2a412fe9-ed1e-462c-9d13-36146c4b2e4d]SDK dependencies versions:{"azuremlftk": "0.1.18323.5a1", "azureml-widgets": "1.0.10", "azureml-train": "1.0.10", "azureml-train-restclients-hyperdrive": "1.0.10", "azureml-train-core": "1.0.10", "azureml-train-automl": "1.0.10", "azureml-telemetry": "1.0.10", "azureml-sdk": "1.0.10", "azureml-pipeline": "1.0.10", "azureml-pipeline-steps": "1.0.10.1", "azureml-pipeline-core": "1.0.10", "azureml-explain-model": "1.0.10", "azureml-dataprep": "1.0.8", "azureml-dataprep-native": "11.2.1", "azureml-core": "1.0.10"}.
+2019-02-14 17:21:20,347 - INFO - 777 : Parent Run ID: AutoML_2a412fe9-ed1e-462c-9d13-36146c4b2e4d
+2019-02-14 17:21:24,509 - INFO - 133 : Win32 QueryInformationJobObject API call failed: [WinError 234] More data is available.
+2019-02-14 17:21:26,064 - INFO - 783 : Snapshotted folder: . with snapshot_id: a1737c51-578c-41e6-b999-25792a2a2bc6
+2019-02-14 17:21:26,066 - INFO - 797 : Starting a snapshot run (snapshotId : a1737c51-578c-41e6-b999-25792a2a2bc6) with following compute definition: {'Configuration': {'script': 'train.py', 'arguments': [], 'target': 'cpunode', 'framework': 'python', 'communicator': 'None', 'autoPrepareEnvironment': True, 'maxRunDurationSeconds': None, 'nodeCount': 1, 'environment': {'environmentVariables': {'EXAMPLE_ENV_VAR': 'EXAMPLE_VALUE'}, 'python': {'userManagedDependencies': False, 'interpreterPath': 'python', 'condaDependencies': CommentedMap([('name', 'project_environment'), ('dependencies', ['python=3.6.2', CommentedMap([('pip', ['azureml-sdk[automl]==1.0.10'])]), 'numpy'])])}, 'docker': {'enabled': False, 'baseImage': 'mcr.microsoft.com/azureml/base:0.2.1', 'sharedVolumes': True, 'gpuSupport': False, 'arguments': [], 'baseImageRegistry': {'address': None, 'username': None, 'password': None}}, 'spark': {'repositories': ['https://mmlspark.azureedge.net/maven'], 'packages': [{'group': 'com.microsoft.ml.spark', 'artifact': 'mmlspark_2.11', 'version': '0.12'}], 'precachePackages': True}, 'databricks': {'mavenLibraries': [], 'pypiLibraries': [], 'rcranLibraries': [], 'jarLibraries': [], 'eggLibraries': []}}, 'history': {'outputCollection': True, 'snapshotProject': True}, 'spark': {'configuration': {'spark.app.name': 'Azure ML Experiment', 'spark.yarn.maxAppAttempts': 1}}, 'hdi': {'yarnDeployMode': 'cluster'}, 'tensorflow': {'workerCount': 1, 'parameterServerCount': 1}, 'mpi': {'processCountPerNode': 1}, 'dataReferences': {'workspaceblobstore': {'dataStoreName': 'workspaceblobstore', 'pathOnDataStore': 'classification-automl/', 'mode': 'download', 'overwrite': True, 'pathOnCompute': '/tmp/classification-automl/'}}, 'sourceDirectoryDataStore': None, 'amlcompute': {'vmSize': None, 'vmPriority': None, 'retainCluster': False, 'name': None, 'clusterMaxNodeCount': 1}}}
+2019-02-14 17:21:34,524 - INFO - 133 : Win32 QueryInformationJobObject API call failed: [WinError 234] More data is available.
