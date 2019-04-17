@@ -4,7 +4,7 @@
 
 1. Follow the instructions [here](https://docs.microsoft.com/en-us/azure/machine-learning/service/quickstart-create-workspace-with-python) until the step named "Install the SDK" to create a local Python environment where you will install the Azure Machine Learning service SDK.
 
-2. Run the **Classification.ipynb** notebook. This is a standalone notebook (not dependent on the Azure ML service SDK). It will train and save a simple classification model to be further operationalized using Azure ML service model deploying capabilities.
+2. (Optional) Run the **Classification.ipynb** notebook. This is a standalone notebook (not dependent on the Azure ML service SDK). It will train and save a simple classification model to be further operationalized using Azure ML service model deploying capabilities.
 
 3. Run the **Azure ML/Configuration.ipynb** notebook. This will create a [Workspace](https://docs.microsoft.com/en-us/azure/machine-learning/service/concept-azure-machine-learning-architecture#workspace) and a [Compute Target](https://docs.microsoft.com/en-us/azure/machine-learning/service/concept-azure-machine-learning-architecture#compute-target) to train your models on.
 
