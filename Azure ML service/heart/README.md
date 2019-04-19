@@ -6,7 +6,7 @@
 
 2. (Optional) Run the **Classification.ipynb** notebook. This is a standalone notebook (not dependent on the Azure ML service SDK). It will train and save a simple classification model to be further operationalized using Azure ML service model deploying capabilities.
 
-3. Run the **Azure ML/Configuration.ipynb** notebook. This will create a [Workspace](https://docs.microsoft.com/en-us/azure/machine-learning/service/concept-azure-machine-learning-architecture#workspace) and a [Compute Target](https://docs.microsoft.com/en-us/azure/machine-learning/service/concept-azure-machine-learning-architecture#compute-target) to train your models on.
+3. Run the **Azure ML/AML Configuration.ipynb** notebook (**note: you will need to replace <YOUR_SUBSCRIPTION_ID> in the second cell by your own Azure Subscription ID**). This will create a [Workspace](https://docs.microsoft.com/en-us/azure/machine-learning/service/concept-azure-machine-learning-architecture#workspace) and a [Compute Target](https://docs.microsoft.com/en-us/azure/machine-learning/service/concept-azure-machine-learning-architecture#compute-target) to train your models on.
 
 4. Run the **Azure ML/Deploy_Model.ipynb** notebook. This will create an [Image](https://docs.microsoft.com/en-us/azure/machine-learning/service/concept-azure-machine-learning-architecture#image) with a score script that uses your trained model for inference and a [Deployment](https://docs.microsoft.com/en-us/azure/machine-learning/service/concept-azure-machine-learning-architecture#deployment) environment from where you can call your score script as a web service.
 
